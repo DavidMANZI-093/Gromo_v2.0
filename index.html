@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon list! -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./files/favicon-16x16.png">
+    <link rel="manifest" href="./files/site.webmanifest">
+    <link rel="mask-icon" href="./files/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Icon list! -->
+    <!-- CSS Files -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS Files -->
+    <title>Gromo - Welcome!</title>
+</head>
+<body id="main">
+    <div id="loading-overlay">
+        <img id="overlay-logo" src="./files/Fast Food - Black.png" alt="">
+        <div id="loading-box">
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+    <div id="form_f">
+        <form class="forms" id="login-f" action="##login" method="post">
+            <h1>Sign in</h1>
+            <fieldset>
+                <div class="field">
+                    <label for="l_email">Email:</label>
+                    <input id="l_email" type="email" name="l_email" placeholder="Email" required>
+                </div>
+                <div class="field">
+                    <label for="l_password">Password:</label>
+                    <input id="l_password" type="password" name="l_password" placeholder="Password" required>
+                </div>
+            </fieldset>
+            <div class="action-bx">
+                <input class="fm_act btn prime-btns" type="submit" value="Sign in" >
+                <p>Don't have an account? <a class="log-switch" href="#" id="goToRegister">Register!</a></p>
+            </div>
+            <div class="socials">
+                <h2>Continue with</h2>
+                <div class="soc-box">
+                    <i class='mvs bx bxl-facebook-circle'></i>
+                    <i class='mvs bx bxl-instagram-alt'></i>
+                    <i class='mvs bx bxl-telegram' ></i>
+                    <i class='mvs bx bxl-spotify' ></i>
+                </div>
+            </div>
+            <p class="notice">
+                Do not use your real password! But please, use a legit email address.
+            </p>
+        </form>
+        <form class="forms" id="register-f" action="##register" method="post">
+            <h1>Register</h1>
+            <fieldset>
+                <div class="field">
+                    <label for="r_name">Username:</label>
+                    <input id="r_name" minlength="4" maxlength="15" type="text" name="r_name" placeholder="Username" required>
+                </div>
+                <div class="field">
+                    <label for="r_email">Email:</label>
+                    <input id="r_email" type="email" name="r_email" placeholder="Email" required>
+                </div>
+                <div class="field">
+                    <label for="r_pass">Password:</label>
+                    <input id="r_password" minlength="6" maxlength="8" type="password" name="r_password" placeholder="Password" required>
+                </div>
+            </fieldset>
+            <div class="action-bx">
+                <input class="fm_act btn prime-btns" type="submit" value="Register" >
+                <p>Already have an account? <a class="log-switch" id="goToLogin" href="#">Sign in!</a></p>
+            </div>
+            <div class="socials">
+                <h2>Continue with</h2>
+                <div class="soc-box">
+                    <i class='mvs bx bxl-facebook-circle'></i>
+                    <i class='mvs bx bxl-instagram-alt'></i>
+                    <i class='mvs bx bxl-telegram' ></i>
+                    <i class='mvs bx bxl-spotify' ></i>
+                </div>
+            </div>
+            <p class="notice">
+                Do not use your real password! But please, use a legit email address.
+            </p>
+        </form>
+    </div>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
