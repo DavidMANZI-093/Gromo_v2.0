@@ -27,7 +27,8 @@ body {
     position: relative;
     z-index: -10;
     font-size: 62.5%;
-    width: 100vw;
+    overflow: auto;
+    width: 100%;
     height: 100vh;
     background-color: var(--white-var);
 }
@@ -36,6 +37,7 @@ body {
     /* Styles for mobile phones */
 
     /* -- loading overlay -- */
+
 
     #loading-overlay {
         display: flex;
@@ -104,9 +106,7 @@ body {
         display: flex;
         position: relative;
         flex-direction: row;
-        min-height: fit-content;
         margin: 1rem 0;
-        height: 100vh;
         width: 88%;
         overflow-x: hidden;
     }
