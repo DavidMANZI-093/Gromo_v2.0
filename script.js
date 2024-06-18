@@ -1,7 +1,7 @@
 // Switch: Sign in - to - Register //
 
 const goTo_Switches = document.querySelectorAll(".log-switch");
-const logPages = document.querySelectorAll(".forms");
+const logPages = document.querySelectorAll(".form-holder");
 
 function changeAspect(event) {
     if (event.target.id == "goToRegister") {
