@@ -38,8 +38,11 @@
         </div>
     </div>
     <div id="form_f">
+      <div class="form-holder">
         <form class="forms" id="login-f" action="##login" method="post">
+
             <h1>Sign in</h1>
+
             <fieldset>
                 <div class="field">
                     <label for="l_email">Email:</label>
@@ -61,45 +64,49 @@
                     <i class='mvs bx bxl-instagram-alt'></i>
                     <i class='mvs bx bxl-telegram' ></i>
                     <i class='mvs bx bxl-spotify' ></i>
-                </div>
-            </div>
-            <p class="notice">
+              </div>
+          </div>
+          <p class="notice">
                 Do not use your real password! But please, use a legit email address.
-            </p>
-        </form>
-        <form class="forms" id="register-f" action="##register" method="post">
+          </p>
+      </form>
+    </div>
+        
+       <div class="form-holder">
+          <form class="forms" id="register-f" action="##register" method="post">
             <h1>Register</h1>
             <fieldset>
-                <div class="field">
-                    <label for="r_name">Username:</label>
-                    <input id="r_name" minlength="4" maxlength="15" type="text" name="r_name" placeholder="Username" required>
-                </div>
-                <div class="field">
-                    <label for="r_email">Email:</label>
-                    <input id="r_email" type="email" name="r_email" placeholder="Email" required>
-                </div>
-                <div class="field">
-                    <label for="r_pass">Password:</label>
-                    <input id="r_password" minlength="6" maxlength="8" type="password" name="r_password" placeholder="Password" required>
-                </div>
+              <div class="field">
+                <label for="r_name">Username:</label>
+                <input id="r_name" minlength="4" maxlength="15" type="text" name="r_name" placeholder="Username" required>
+              </div>
+              <div class="field">
+                <label for="r_email">Email:</label>
+                <input id="r_email" type="email" name="r_email" placeholder="Email" required>
+              </div>
+              <div class="field">
+                <label for="r_pass">Password:</label>
+                <input id="r_password" minlength="6" maxlength="8" type="password" name="r_password" placeholder="Password" required>
+              </div>
             </fieldset>
             <div class="action-bx">
-                <input class="fm_act btn prime-btns" type="submit" value="Register" >
-                <p>Already have an account? <a class="log-switch" id="goToLogin" href="#">Sign in!</a></p>
+              <input class="fm_act btn prime-btns" type="submit" value="Register">
+              <p>Already have an account? <a class="log-switch" id="goToLogin" href="#">Sign in!</a></p>
             </div>
             <div class="socials">
-                <h2>Continue with</h2>
-                <div class="soc-box">
-                    <i class='mvs bx bxl-facebook-circle'></i>
-                    <i class='mvs bx bxl-instagram-alt'></i>
-                    <i class='mvs bx bxl-telegram' ></i>
-                    <i class='mvs bx bxl-spotify' ></i>
-                </div>
+              <h2>Continue with</h2>
+              <div class="soc-box">
+                <i class='mvs bx bxl-facebook-circle'></i>
+                <i class='mvs bx bxl-instagram-alt'></i>
+                <i class='mvs bx bxl-telegram'></i>
+                <i class='mvs bx bxl-spotify'></i>
+              </div>
             </div>
             <p class="notice">
-                Do not use your real password! But please, use a legit email address.
+              Do not use your real password! But please, use a legit email address.
             </p>
-        </form>
+          </form>
+       </div>
     </div>
     <script type="module" src="./script.js"></script>
 </body>
