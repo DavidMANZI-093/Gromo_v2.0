@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- More meta data -->
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <meta http-equiv="origin-trial" content="YOUR_ORIGIN_TRIAL_TOKEN">
-    <meta property="og:title" content="Gromo - Welcome!">
-    <meta property="og:description" content="Pleasure &amp; Taste.">
-    <meta property="og:image" content="https://davidmanzi-093.github.io/Gromo/files/android-chrome-384x384.png">
-    <meta property="og:url" content="https://davidmanzi-093.github.io/Gromo/">
-    <meta property="og:type" content="website">
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="origin-trial" content="YOUR_ORIGIN_TRIAL_TOKEN" />
+    <meta property="og:title" content="Gromo - Welcome!" />
+    <meta property="og:description" content="Pleasure &amp; Taste." />
+    <meta property="og:image" content="https://davidmanzi-093.github.io/Gromo/files/android-chrome-384x384.png" />
+    <meta property="og:url" content="https://davidmanzi-093.github.io/Gromo/" />
+    <meta property="og:type" content="website" />
     <!-- More meta data -->
     <!-- Icon list! -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./files/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./files/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./files/favicon-16x16.png">
-    <link rel="manifest" href="./files/site.webmanifest">
-    <link rel="mask-icon" href="./files/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="./files/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./files/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./files/favicon-16x16.png" />
+    <link rel="manifest" href="./files/site.webmanifest" />
+    <link rel="mask-icon" href="./files/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Icon list! -->
     <!-- CSS Files -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <!-- CSS Files -->
+    <!-- Font Files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Font Files -->
     <title>Gromo - Welcome!</title>
 </head>
+
 <body id="main">
     <div id="loading-overlay">
-        <img id="overlay-logo" src="./files/Fast Food - Black.png" alt="">
+        <img id="overlay-logo" src="./files/Fast Food - Black.png" alt="" />
         <div id="loading-box">
             <div class="loading-bar"></div>
             <div class="loading-bar"></div>
@@ -38,76 +46,357 @@
         </div>
     </div>
     <div id="form_f">
-      <div class="form-holder">
-        <form class="forms" id="login-f" action="##login" method="post">
-
-            <h1>Sign in</h1>
-
-            <fieldset>
-                <div class="field">
-                    <label for="l_email">Email:</label>
-                    <input id="l_email" type="email" name="l_email" placeholder="Email" required>
+        <div class="form-holder">
+            <form class="forms" id="login-f" action="##login" method="post">
+                <div class="initials">
+                    <img class="l-logo" src="./files/Fast Food - Black.png" alt="">
+                    <hr>
+                    <h1>Sign in</h1>
                 </div>
-                <div class="field">
-                    <label for="l_password">Password:</label>
-                    <input id="l_password" type="password" name="l_password" placeholder="Password" required>
+                <fieldset>
+                    <div class="field">
+                        <label for="l_email">Email:</label>
+                        <input id="l_email" type="email" name="l_email" placeholder="Email" required />
+                    </div>
+                    <div class="field">
+                        <label for="l_password">Password:</label>
+                        <input minlength="6" maxlength="8" id="l_password" type="password" name="l_password" placeholder="Password" required />
+                    </div>
+                </fieldset>
+                <div class="action-bx">
+                    <input class="fm_act btn prime-btns" type="submit" value="Sign in" />
+                    <p>
+                        Don't have an account?
+                        <a class="log-switch" href="#" id="goToRegister">Register!</a>
+                    </p>
                 </div>
-            </fieldset>
-            <div class="action-bx">
-                <input class="fm_act btn prime-btns" type="submit" value="Sign in" >
-                <p>Don't have an account? <a class="log-switch" href="#" id="goToRegister">Register!</a></p>
-            </div>
-            <div class="socials">
-                <h2>Continue with</h2>
-                <div class="soc-box">
-                    <i class='mvs bx bxl-facebook-circle'></i>
-                    <i class='mvs bx bxl-instagram-alt'></i>
-                    <i class='mvs bx bxl-telegram' ></i>
-                    <i class='mvs bx bxl-spotify' ></i>
-              </div>
-          </div>
-          <p class="notice">
-                Do not use your real password! But please, use a legit email address.
-          </p>
-      </form>
+                <div class="socials">
+                    <h2>Continue with</h2>
+                    <div class="soc-box">
+                        <i class="mvs bx bxl-facebook-circle"></i>
+                        <i class="mvs bx bxl-instagram-alt"></i>
+                        <i class="mvs bx bxl-telegram"></i>
+                        <i class="mvs bx bxl-spotify"></i>
+                    </div>
+                </div>
+                <p class="notice">
+                    Do not use your real password! But please, use a legit email
+                    address.
+                </p>
+            </form>
+        </div>
+
+        <div class="form-holder">
+            <form class="forms" id="register-f" action="##register" method="post">
+                <div class="initials">
+                    <img class="l-logo" src="./files/Fast Food - Black.png" alt="">
+                    <hr>
+                    <h1>Register</h1>
+                </div>
+                <fieldset>
+                    <div class="field">
+                        <label for="r_name">Username:</label>
+                        <input id="r_name" minlength="4" maxlength="15" type="text" name="r_name" placeholder="Username"
+                            required />
+                    </div>
+                    <div class="field">
+                        <label for="r_email">Email:</label>
+                        <input id="r_email" type="email" name="r_email" placeholder="Email" required />
+                    </div>
+                    <div class="field">
+                        <label for="r_pass">Password:</label>
+                        <input id="r_password" minlength="6" maxlength="8" type="password" name="r_password"
+                            placeholder="Password" required />
+                    </div>
+                </fieldset>
+                <div class="action-bx">
+                    <input class="fm_act btn prime-btns" type="submit" value="Register" />
+                    <p>
+                        Already have an account?
+                        <a class="log-switch" id="goToLogin" href="#">Sign in!</a>
+                    </p>
+                </div>
+                <div class="socials">
+                    <h2>Continue with</h2>
+                    <div class="soc-box">
+                        <i class="mvs bx bxl-facebook-circle"></i>
+                        <i class="mvs bx bxl-instagram-alt"></i>
+                        <i class="mvs bx bxl-telegram"></i>
+                        <i class="mvs bx bxl-spotify"></i>
+                    </div>
+                </div>
+                <p class="notice">
+                    Do not use your real password! But please, use a legit email
+                    address.
+                </p>
+            </form>
+        </div>
     </div>
-        
-       <div class="form-holder">
-          <form class="forms" id="register-f" action="##register" method="post">
-            <h1>Register</h1>
-            <fieldset>
-              <div class="field">
-                <label for="r_name">Username:</label>
-                <input id="r_name" minlength="4" maxlength="15" type="text" name="r_name" placeholder="Username" required>
-              </div>
-              <div class="field">
-                <label for="r_email">Email:</label>
-                <input id="r_email" type="email" name="r_email" placeholder="Email" required>
-              </div>
-              <div class="field">
-                <label for="r_pass">Password:</label>
-                <input id="r_password" minlength="6" maxlength="8" type="password" name="r_password" placeholder="Password" required>
-              </div>
-            </fieldset>
-            <div class="action-bx">
-              <input class="fm_act btn prime-btns" type="submit" value="Register">
-              <p>Already have an account? <a class="log-switch" id="goToLogin" href="#">Sign in!</a></p>
+    <div id="main_body">
+        <div class="menu-page">
+            <h2><i class='bx bx-food-menu'></i> Our Menu</h2>
+            <div class="body">
+                <div class="meal-box">
+                    <h3>Breakfast</h3>
+                    <div class="meals breakfast-meals">
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <h4>The Pancake Stack</h4>
+                                <div class="descript">Fluffy pancakes served with maple syrup and fresh berries.</div>
+                            </div>
+                            <div class="tag-bx">
+                                <button class="btn btn-s">Buy</button>
+                                <div class="price-s"><i class='bx bxs-purchase-tag-alt' ></i> | 9200 RWF</div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-box">
+                    <h3>Lunch</h3>
+                    <div class="meals lunch-meals">
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-box">
+                    <h3>Dinner</h3>
+                    <div class="meals dinner-meals">
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-box">
+                    <h3>Specials</h3>
+                    <div class="meals special-meals">
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="img"></div>
+                            <div class="p-box">
+                                <div class="p"></div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="btn-bx">
+                                <div class="btn-s"></div>
+                                <div class="btn-s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="socials">
-              <h2>Continue with</h2>
-              <div class="soc-box">
-                <i class='mvs bx bxl-facebook-circle'></i>
-                <i class='mvs bx bxl-instagram-alt'></i>
-                <i class='mvs bx bxl-telegram'></i>
-                <i class='mvs bx bxl-spotify'></i>
-              </div>
+            <div class="option-h"></div>
+        </div>
+        <div class="orders-page" style="display: none;">
+            <h2>Pending Orders</h2>
+            <div class="head">
+                <i class='bx bx-time-five'></i>
+                <span class="grouper">
+                    <i class='bx bx-search-alt' ></i>
+                    <i class='bx bx-sort-down' ></i>
+                </span>
             </div>
-            <p class="notice">
-              Do not use your real password! But please, use a legit email address.
-            </p>
-          </form>
-       </div>
+            <div class="body">
+                <div class="empty-msg">
+                    <i class='bx bx-check-circle'></i>
+                    <p>No pending orders!</p>
+                </div>
+                <div class="option-h"></div>
+                <div class="option-h"></div>
+            </div>
+        </div>
+        <div class="mine-page" style="display: none;">
+            <!-- <div class="option"><i class='bx bx-log-out-circle' ></i></div> -->
+            <div class="head">
+                <i class='bx bxs-user-circle'><span class="badge">M</span></i>
+                <h2>My Account</h2>
+                <p>manzidavid093@gmail.com</p>
+            </div>
+            <div class="body">
+                <ul>
+                    <li class="option"><i class='bx bx-log-out' ></i>Log out</li>
+                    <li class="option"><i class='bx bx-moon'><span class="notify"></span></i>Dark mode</li>
+                    <li class="option"><i class='bx bx-info-circle' ><span class="notify"></span></i>About Gromo</li>
+                    <li class="option"><i class='bx bx-user' ></i>My profile</li>
+                    <li class="option"><i class='bx bx-check-shield'></i>Privacy & Security</li>
+                    <li class="option"><i class='bx bx-credit-card' ></i>Payment Details</li>
+                    <li class="option"><i class='bx bx-bell' ></i>Subscribtions</li>
+                    <li class="option"><i class='bx bx-group'></i>Community</li>
+                    <li class="option"><i class='bx bx-news' ></i>News</li>
+                    <li class="option"><i class='bx bx-help-circle'></i>Support</li>
+                    <li class="option"><i class='bx bx-trophy' ><span class="notify"></span></i>Rate us</li>
+                    <li class="option-h"></li>
+                    <li class="option-h"></li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="navs">
+                    <i class='bx bx-home-alt-2'></i>
+                </li>
+                <li class="navs active">
+                    <i class='bx bx-restaurant'></i>
+                </li>
+                <li class="navs">
+                    <i class='bx bx-spreadsheet'></i>
+                </li>
+                <li class="navs">
+                    <span class="notify"></span>
+                    <i class='bx bx-user'></i>
+                </li>
+            </ul>
+        </nav>
     </div>
     <script type="module" src="./script.js"></script>
 </body>
+
 </html>
