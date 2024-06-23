@@ -55,23 +55,85 @@ function showOverlay(event) {
 }
 
 icon_actions.forEach(action => {
-    action.onclick = showOverlay; 
+    action.addEventListener('click', (event) => {
+        actionHandler(event);
+    })
 });
 
 logPages.forEach(logPage => {
-    logPage.addEventListener("submit", formHandler);
+    logPage.addEventListener("submit", (event) => {
+        formHandler(event);
+    });
 })
 
 function formHandler(event) {
     event.preventDefault();
     showOverlay();
     clearFields(event);
+    formAuthenticater();
+}
+
+function actionHandler(event) {
+  showOverlay();
+  clearFields(event);
+  formAuthenticater();
 }
 
 function clearFields(event) {
     setTimeout(() => {
-        event.target.reset();
+        event.target.closest('.forms').reset();
     }, 500);
 }
 
 // Undefined Display //
+
+// Sign in Hider //
+
+const formBox = document.getElementById("form_f");
+const mainBody = document.getElementById("main_body");
+
+function formAuthenticater() {
+    logPages.forEach(logPage => {
+        logPage.style.opacity = "0%";
+        setTimeout(() => {
+            logPage.style.display = "none";
+            formBox.style.display = "none";
+            mainBody.style.display = "flex";
+            pushNotifier();
+        }, 2000)
+    });
+}
+
+// Sign in Hider //
+
+// Notifier //
+
+const notifiers = document.querySelectorAll(".notify");
+function pushNotifier() {
+    setTimeout(() => {
+        notifiers.forEach(notifier => {
+            notifier.style.display = "flex";
+        });
+    }, 2000);
+}
+
+// Notifier //
+
+// Navigator //
+
+const navKeys = document.querySelectorAll(".navs");
+
+navKeys.forEach(navKey => {
+    navKey.addEventListener("click", (event) => {
+        navigate(event);
+    });
+});
+
+function navigate(event) {
+    navKeys.forEach(navKey => {
+        navKey.classList.remove("active");
+    })
+    event.target.closest('.navs').classList.add("active");
+}
+
+// Navigator //
