@@ -551,6 +551,7 @@ body {
 
     .meal .descript {
         font-size: var(--font-lvl-n2);
+        text-align: justify;
     }
 
     .meal h4 {
@@ -562,9 +563,7 @@ body {
     .meal .tag-bx {
         background-color: inherit;
         gap: 1.6rem;
-        width: 60%;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        justify-content: left;
 
     }
 
