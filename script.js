@@ -129,8 +129,6 @@ const pageMapping = {
     "3" : pages[2] 
 };
 
-console.log(pageMapping[1]);
-
 navKeys.forEach(navKey => {
     navKey.addEventListener("click", (event) => {
         navigate(event);

@@ -16,7 +16,8 @@
     --fg-color-v2: #000000;
     --fg-color-v3: #a5a5a5;
     --fg-color-v4: #6e6e6e;
-    --thumbnail-grad: linear-gradient(#ff910038, #ff910038);
+    --thumbnail-color: #ff910015;
+    --thumbnail-grad: linear-gradient(var(--thumbnail-color), var(--thumbnail-color));
     --lttr-spcng-1: 0.02rem;
     --font-lvl-b1: 1.24rem;
     --font-lvl-b2: 1.8rem;
