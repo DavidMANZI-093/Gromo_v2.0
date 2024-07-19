@@ -119,9 +119,17 @@ function pushNotifier() {
 
 // Notifier //
 
-// Navigator //
+// Navigator and Pagination //
 
-const navKeys = document.querySelectorAll(".navs");
+const pages = document.querySelectorAll(".pages");
+const navKeys = Array.from(document.querySelectorAll(".navs"));
+const pageMapping = {
+    "1" : pages[0],
+    "2" : pages[1],
+    "3" : pages[2] 
+};
+
+console.log(pageMapping[1]);
 
 navKeys.forEach(navKey => {
     navKey.addEventListener("click", (event) => {
@@ -132,8 +140,12 @@ navKeys.forEach(navKey => {
 function navigate(event) {
     navKeys.forEach(navKey => {
         navKey.classList.remove("active");
+    });
+    pages.forEach(page => {
+        page.classList.remove("active");
     })
     event.target.closest('.navs').classList.add("active");
+    pageMapping[navKeys.indexOf(event.target.closest('.navs'))].classList.add("active");
 }
 
-// Navigator //
+// Navigator and Pagination //

@@ -303,9 +303,13 @@ body {
         background-color: var(--bg-color-v1);
     }
 
+    .pages.active {
+        display: flex;
+    }
+
     .mine-page, .orders-page, .menu-page {
         padding: 2.64rem 1.30rem 1rem 1.30rem;
-        display: flex;
+        display: none;
         position: relative;
         width: 100%;
         height: 100%;
