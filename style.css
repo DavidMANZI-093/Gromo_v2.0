@@ -309,7 +309,7 @@ body {
         display: flex;
     }
 
-    .mine-page, .orders-page, .menu-page {
+    .mine-page, .orders-page, .menu-page, .landing-page {
         padding: 2.64rem 1.30rem 1rem 1.30rem;
         display: none;
         position: relative;

@@ -124,9 +124,10 @@ function pushNotifier() {
 const pages = document.querySelectorAll(".pages");
 const navKeys = Array.from(document.querySelectorAll(".navs"));
 const pageMapping = {
-    "1" : pages[0],
-    "2" : pages[1],
-    "3" : pages[2] 
+    "0" : pages[0],
+    "1" : pages[1],
+    "2" : pages[2],
+    "3" : pages[3] 
 };
 
 navKeys.forEach(navKey => {
